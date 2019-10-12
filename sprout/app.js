@@ -2,8 +2,14 @@ function menu(){
 	window.location.href = "menu.html";
 }
 
+var globalCountry;
 function load(){
 	var country = "India";
+	globalCountry = localStorage.getItem("globalCountryStorage");
+	console.log("GLobal country is " + globalCountry);
+	if(globalCountry == "Brazil" || globalCountry == "Malawai" || globalCountry == "India"){
+		country = globalCountry;
+	} 
 
 	var mydata = JSON.parse(data);
 	var acres = Number(document.getElementById('acres').value);
@@ -12,22 +18,27 @@ function load(){
 	
 	var expense;
 	var income;
+	var fp;
 	if(country == "Brazil"){
+		fp = .16;
 		expense = (29 * acres) + (10.3 * acres) + (440 * noWorkers) + 1130;
-		income = 0.16 * acres * 345 + .63 * expense + 700;
+		income = fp * acres * 345 + .63 * expense + 700;
 	}else if(country == "Malawai"){
+		fp = .24;
 		expense = (.13 * acres) + (10.3 * acres) + (86 * noWorkers) + 1130;
-		income = .24 * acres * 100 + 0.66 * expense + 700;
+		income = fp * acres * 100 + 0.66 * expense + 700;
 	}else if(country == "India"){
+		fp = .16;
 		expense = (15 * acres) + (10.3 * acres) + (217 * noWorkers) + 1130;
-		income = 0.16 * acres * 1850 + .58 * expense + 700;
+		income = fp * acres * 1850 + .58 * expense + 700;
 	}
 	var newRevenue = income - expense;
 
-	document.getElementById("expenseId").innerHTML = "Expenses: " + expense;
-	document.getElementById("incomeId").innerHTML = "Income: " + income;
-	document.getElementById("revenueId").innerHTML = "Possible Revenue: " + newRevenue;
-	document.getElementById("revenueGainId").innerHTML = "Revenue Gain: " + (newRevenue - revenue);
+	document.getElementById("pricePerLb").innerHTML = "Fair Price: " + fp.toFixed(2) + "/lb";
+	document.getElementById("expenseId").innerHTML = "Expenses: " + expense.toFixed(2);
+	document.getElementById("incomeId").innerHTML = "Income: " + income.toFixed(2);
+	document.getElementById("revenueId").innerHTML = "Possible Revenue: " + newRevenue.toFixed(2);
+	document.getElementById("revenueGainId").innerHTML = "Revenue Gain: " + (newRevenue - revenue).toFixed(2);
 	console.log(acres + revenue);
 }
 function clickBanana(){
@@ -50,8 +61,8 @@ function clickWheat(){
 	console.log('the wheat was clicked');
 	document.getElementById("selected").innerHTML = "Selected: Wheat";
 }
-var globalCountry;
 function changeCountry(){
 	globalCountry = document.getElementById('country').value;
+	localStorage.setItem("globalCountryStorage", globalCountry);
 	console.log(globalCountry);
 }
