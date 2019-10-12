@@ -13,7 +13,10 @@
   <div class = "flagholder">
     <h2 class = "header1"> Wheres your location </h2>
     <br>
-    <select>
+    <select id="country">
+            <option value="Brazil">Brazil</option>
+            <option value="Malawi">Malawi</option>
+            <option value="India">India</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -43,7 +46,6 @@
             <option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
             <option value="Botswana">Botswana</option>
             <option value="Bouvet Island">Bouvet Island</option>
-            <option value="Brazil">Brazil</option>
             <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
             <option value="Brunei Darussalam">Brunei Darussalam</option>
             <option value="Bulgaria">Bulgaria</option>
@@ -114,7 +116,6 @@
             <option value="Hong Kong">Hong Kong</option>
             <option value="Hungary">Hungary</option>
             <option value="Iceland">Iceland</option>
-            <option value="India">India</option>
             <option value="Indonesia">Indonesia</option>
             <option value="Iran">Iran (Islamic Republic of)</option>
             <option value="Iraq">Iraq</option>
@@ -143,7 +144,6 @@
             <option value="Macau">Macau</option>
             <option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
             <option value="Madagascar">Madagascar</option>
-            <option value="Malawi">Malawi</option>
             <option value="Malaysia">Malaysia</option>
             <option value="Maldives">Maldives</option>
             <option value="Mali">Mali</option>
@@ -257,12 +257,13 @@
 </div>
 
 <div class = "options">
-    <button style = "background-color: lightgreen" class = "learn-more">
+    <button type="button" onclick="changeCountry();"style = "background-color: lightgreen" class = "learn-more">
         Confirm
     </button>
     <br>
-    <button class = "learn-more">
-        Cancel
+    <button onclick="location.href = 'menu.html';"class = "learn-more">
+        Exit
     </button>
 </div>
+<script type="text/javascript" src="../app.js"></script>
 </body>

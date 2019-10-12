@@ -15,8 +15,9 @@
       <a href="index.html" target="_blank">
         <img src="icons/icon.png" class="icon">
       </a>
-      <button class="brk-btn" onclick="window.location.href = 'help.html'">HELP</button>
+      <button class="brk-btn" onclick="window.location.href = 'menu.html'">HELP</button>
       <div class = "seperator"></div>
+      <h1 style="text-align:center" >Choose your crop</h1>
       <div class = "options">
             <div class="wrapper">
                     <input checked type=radio name="slider" id="slide1" />
@@ -29,32 +30,32 @@
                       <div class=inner>
                         <article>
                           <div class="info top-left">
-                            <h3>Potato</h3></div>
-                          <img src="assets/potato.jpg" />
+                            <h3>Banana</h3></div>
+                          <img onclick="clickBanana()" src="assets/banana.jpg" />
                         </article>
                   
                         <article>
                           <div class="info bottom-right">
                             <h3>Maize</h3></div>
-                          <img src="assets/maize.jpg" />
+                          <img onclick="clickMaize()" src="assets/maize.jpg" />
                         </article>
                   
                         <article>
                           <div class="info bottom-left">
                             <h3>Rice</h3></div>
-                          <img src="assets/rice.jpg" />
+                          <img onclick="clickRice()" src="assets/rice.jpg" />
                         </article>
                   
                         <article>
                           <div class="info top-right">
-                            <h3>Soybean</h3></div>
-                          <img src="assets/soy.jpg" />
+                            <h3>Cotton</h3></div>
+                          <img onclick="clickCotton()" src="assets/cotton.jpg" />
                         </article>
                   
                         <article>
                           <div class="info bottom-left">
                             <h3>Wheat</h3></div>
-                          <img src="assets/wheat.jpg" />
+                          <img onclick="clickWheat()" src="assets/wheat.jpg" />
                         </article>
                       </div>
                       <!-- .inner -->
@@ -79,7 +80,51 @@
                     </div>
                     <!-- .slider-dot-control -->
                   </div>
+				  <div style="text-align:center">
+					<h1 id="selected"> Currently Selected: </h1>
+				  </div>
+				  <div style="text-align:center">
+					   <h1> Farm Size (in acres) </h1>
+					   <textarea id="acres" rows="1" cols="50">
+						</textarea>
+				  </div>
+				  <div style="text-align:center">
+					   <h1> Annual Revenue </h1>
+					   <textarea id="revenue" rows="1" cols="50">
+						</textarea>
+				  </div>			
+				  <div style="text-align:center">
+					   <h1> Family Helpers </h1>
+					   <textarea id="noWorkers" rows="1" cols="50">
+						</textarea>
+				  </div>			
+				  <div style="text-align:center">
+					   <br>
+					   <button type="button" onclick="load();">Submit!</button>
+				  </div>
+				  <div style="text-align:center">
+						<h1 id="expenseId">
+							Expense:	
+						</h1>
+				  </div>
+				  <div style="text-align:center">
+						<h1 id="incomeId">
+							Income: 
+						</h1>
+				  </div>
+				  <div style="text-align:center">
+						<h1 id="revenueId">
+							Possible Revenue: 
+						</h1>
+				  </div>
+				  <div style="text-align:center">
+						<h1 id="revenueGainId">
+							 Revenue Gain: 
+						</h1>
+				  </div>
       </div>
-  </body>
+        <script type="text/javascript" src="../data/fair_trade.json"></script>
+        <script type="text/javascript" src="../app.js"></script>
+ </body>
 
 </html>
