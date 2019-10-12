@@ -1,3 +1,3 @@
 function menu(){
-	alert("MENU");
+	window.location.href = "cropchooser.html";
 }

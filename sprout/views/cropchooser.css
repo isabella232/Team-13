@@ -22,6 +22,49 @@
   article img {
     width: 100%;
   }
+
+  .brk-btn {
+    position: absolute;
+    float: right;
+    top: 8%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #955100;
+    text-decoration: none;
+    border: 0.1em solid #955100;
+    padding: 0.3em 0.7em;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brk-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
   
   /*---- SET UP CONTROL ----*/
   .slider-prev-next-control {
