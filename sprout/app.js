@@ -1,8 +1,7 @@
-window.addEventListener("load", function() {
-  console.log("Hello World!");
-});
-
-function main(){
+if ("geolocation" in navigator) {
+	console.log("navigator is available");
+} else {
+	console.log("navigator is not available");
 }
 
 function menu(){
