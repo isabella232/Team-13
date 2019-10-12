@@ -1,5 +1,5 @@
 function menu(){
-	window.location.href = "cropchooser.html";
+	window.location.href = "menu.html";
 }
 
 function load(){
