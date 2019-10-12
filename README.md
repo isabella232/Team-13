@@ -9,4 +9,4 @@ Provide people in poverty opportunities to be financially independent, free, and
 - Display the fair trade prices, recommended crops to harvest, possible companies to connect, and possible growth rates.
 
 ## Dates
-October 11th, 2019
+October 11st, 2019
