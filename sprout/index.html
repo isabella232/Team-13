@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
-
-    <title>Hello World</title>
-
-    <style>
-      body {
-        border: 1px solid black;
-      }
-    </style>
-
-    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
-         so we use a script file. -->
-    <script src="app.js" defer></script>
-
-  </head>
-
-  <body>
-    <!-- This code is in the public domain. Enjoy! -->
-    <h1>Hello World</h1>
-  </body>
-
-</html>
+<head>
+    <link rel="stylesheet" href="intro2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title> Second intro for sprout</title>
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo-box">
+            <img src = "assets/Sprout_logo.png" alt = "Logo" class = "logo">
+        </div>
+        <div class = "seperator"></div>
+        <div>
+			<!-- <button id="start" class="brk-btn"> START </button> -->
+			<input class="brk-btn" id="clickMe" type="button" value="START" onclick="menu();" />
+        </div>
+    </header>  
+	<script src="app.js"></script>
+</body>
