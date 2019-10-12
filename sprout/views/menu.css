@@ -1,0 +1,55 @@
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+button.learn-more {
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    color: #202121;
+    padding: 1.25rem 2rem;
+    background: #fff;
+    text-transform: uppercase;
+}
+button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
+    letter-spacing: 0.225rem;
+}
+
+.welcome {
+    position: relative;
+    top:5vh;
+    left: 4vh;
+}
+
+.icon {
+    left: 5vh;
+    position: relative;
+    width:5vh;
+    height:5vh;
+}
+
+.options {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top:10vh;
+    padding: 3vh;
+}
+
+.seperator {
+    height: 0.3vh;
+    width: 45vh;
+    background-color:rgba(40,180,131,1);
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    top:12vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

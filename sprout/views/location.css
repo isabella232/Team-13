@@ -1,0 +1,66 @@
+.flag {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;   
+    display: inline-block;
+}
+
+.header1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.header2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.flagholder {
+    text-align: center;
+    position: relative;
+    top: 35%;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.options {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top:78vh;
+    padding: 3vh;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+button.learn-more {
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    color: #202121;
+    padding: 1.25rem 2rem;
+    background: #fff;
+    text-transform: uppercase;
+}
+button.learn-more:hover, button.learn-more:focus, button.learn-more:active {
+    letter-spacing: 0.225rem;
+}
+
