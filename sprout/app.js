@@ -1,10 +1,10 @@
-function main ()
-{
-  var start = document.getElementById("start");
-  start.addEventListener('click', notify);
+window.addEventListener("load", function() {
+  console.log("Hello World!");
+});
+
+function main(){
 }
 
-function menu ()
-{
-  console.log("Yay!");
+function menu(){
+	alert("MENU");
 }
