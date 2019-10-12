@@ -1,4 +1,4 @@
-# App
+# Sprout
 
 ## Objective
 Provide people in poverty opportunities to be financially independent, free, and stable by creating a KaiOS app so that the latest information is easily accessible.
