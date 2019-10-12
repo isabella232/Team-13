@@ -100,28 +100,38 @@
 				  </div>			
 				  <div style="text-align:center">
 					   <br>
-					   <button type="button" onclick="load();">Submit!</button>
+					   <button class = "learn-more" type="button" onclick="load();location.href='#popup';">Submit!</button>
 				  </div>
-				  <div style="text-align:center">
-						<h1 id="expenseId">
-							Expense:	
-						</h1>
-				  </div>
-				  <div style="text-align:center">
-						<h1 id="incomeId">
-							Income: 
-						</h1>
-				  </div>
-				  <div style="text-align:center">
-						<h1 id="revenueId">
-							Possible Revenue: 
-						</h1>
-				  </div>
-				  <div style="text-align:center">
-						<h1 id="revenueGainId">
-							 Revenue Gain: 
-						</h1>
-				  </div>
+                  </div>
+                
+                      <div class="popup" id="popup">
+                        <div class="popup-inner">
+                          <div class="popup__text">
+                              <div style="text-align:center">
+                                  <h1 id="expenseId">
+                                    Expense:	
+                                  </h1>
+                                </div>
+                                <div style="text-align:center">
+                                  <h1 id="incomeId">
+                                    Income: 
+                                  </h1>
+                                </div>
+                                <div style="text-align:center">
+                                  <h1 id="revenueId">
+                                    Possible Revenue: 
+                                  </h1>
+                                </div>
+                                <div style="text-align:center">
+                                  <h1 id="revenueGainId">
+                                     Revenue Gain: 
+                                  </h1>
+                          </div>
+                          <a class="popup__close" href="#">X</a>
+                        </div>
+                      </div>
+
+                
       </div>
         <script type="text/javascript" src="../data/fair_trade.json"></script>
         <script type="text/javascript" src="../app.js"></script>
